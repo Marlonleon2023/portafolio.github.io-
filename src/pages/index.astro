@@ -1,0 +1,499 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Navbar from '../components/Navbar.astro';
+import { ViewTransitions } from "astro:transitions";
+
+---
+
+<Layout title="Marlon">
+    <Navbar/>
+	<main >
+
+		<section id="inicio" class="inicio">
+		
+		<div class="texto-lado">
+		<h1 >¡Hola, soy<span class="text-gradient"> Marlon Esteban</span></h1>
+		<p class="p-v2">Soy <span class="p-vcolor">Estudiante|</span></p>
+		<p class="instructions">
+			Estoy estudiando análisis y desarrollo de software, y me estoy enfocando principalmente en el desarrollo web.
+			Mi meta es mejorar constantemente y aprender más en esta área. Me gustaría profundizar
+			en diferentes tecnologías 
+			y también aprender sobre buenas prácticas de desarrollo y metodologías ágiles.
+		</p>
+	</div>
+	<img src="../images/marlon.jpg" alt="marlon" class="imagen-lado">
+	</section>
+	<div>
+		<div class="footer-links">
+            <div class="social-link">
+                <a href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                <a href="https://instagram.com"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+		<div class="buton1">
+		<button>Cv</button>
+		<button>Contactame</button>
+	</div>
+	</div>
+
+	<section id="educacion" class="educacion-section">
+        <h2 class="educacion-title">Educación</h2>
+        <ul class="educacion-list">
+            <div class="educacion-item">
+				<i class="fa-solid fa-user-graduate" style="color: #5fd5ec;"></i>
+            <strong class="educacion-institution">Título Bachiller (2020)</strong>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cumque. 
+				Quod doloribus rem distinctio commodi 
+			</p>
+			</div>
+            <div class="educacion-item">
+			<i class="fa-solid fa-laptop-code" style="color: #50dff2;"></i>
+            <strong class="educacion-institution">Analis y desarrollo software (SENA)</strong>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cumque. 
+				Quod doloribus rem distinctio commodi </p>
+            </div>
+			<div class="educacion-item">
+				<i class="fa-regular fa-bookmark" style="color: #4fe3da;"></i>
+				<strong class="educacion-institution">Ingles</strong>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cumque. 
+					Quod doloribus rem distinctio commodi </p>
+				</div>
+				<div class="educacion-item">
+				<i class="fa-solid fa-user-lock" style="color: #51ece9;"></i>
+					<strong class="educacion-institution">Sistema operativo (Root)</strong>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, cumque. 
+						Quod doloribus rem distinctio commodi </p>
+					</div>
+		</ul>
+    </section>
+
+	<section id="tecnologias">
+		<h2>Tecnologias</h2>
+		<div class="imagen-decore">
+	    <img class="decor-ima" src="../images/codin3.png" alt="">
+		</div>
+		<div class="conten-images">
+			<h2 class="subtitu">My Skills</h2>
+			<p class="skills-p">Actualmente me encuentro , enfocado en adquirir habilidades de codificación y comprensión de diversos lenguajes de programación. Estoy desarrollando la capacidad de resolver problemas de programación de manera eficiente y lógica. Tengo conocimientos en diseño web utilizando CSS y HTML, incluyendo la capacidad de aplicar estilos avanzados como flexbox, alineación de elementos, y personalización de formularios. Me esfuerzo por aprender constantemente, mejorar mis habilidades y aplicar nuevos conocimientos a mis proyectos de programación, con un enfoque detallado para asegurar que los elementos 
+				de mi página web estén bien alineados y estilizados.</p>
+			<img class="redondea" src="../images/pixelcut.png" alt="">
+		</div>
+	
+	</section>
+
+	<section id="contactame">
+		<h2>Contactame</h2>
+<div>
+	<div class="container-f">
+		<div class="number">
+			<h3><i class="fa-regular fa-address-book" style="color: #4bfbf8;"></i>
+				Contacto</h3>
+				
+			<p>+573202148390</p>
+            <hr>
+            
+            <h3><i class="fa-regular fa-envelope" style="color: #46e6fb;"></i> 
+				Correo</h3>
+            <p>marlonestebanleonrojas@gmail.com</p>
+			<hr>
+        </div>
+        <div class="formu-sty">
+            <form class="cent-form" action="actions" method="post">
+                <legend class="tex-lenged">Nombre Completo</legend>
+                <input type="text" name="name">
+                <legend class="tex-lenged">Correo</legend>
+                <input type="email" name="email">
+                <legend class="tex-lenged">Telefono</legend>
+                <input type="tel" name="telefono">
+                <button class="btn1">Enviar</button>
+            </form>
+        </div>
+        
+    </div>
+
+
+
+	</section>
+
+        <section>
+			<h2>Proyectos</h2>
+		<ul role="list" class="link-card-grid"> 
+			<Card 
+				href="/marlon"
+				title="Libros"
+				body="Recomiendo un libro que he creado de ciencia ficcion"
+			/>
+			<Card
+				href="#"
+				title="Integrations"
+				body="Supercharge your project with new frameworks and libraries."
+			/>
+			<Card
+				href="#"
+				title="Blogs"
+				body="Explore a galaxy of community-built starter themes."
+			/>
+			<Card
+				href="#"
+				title="Community"
+				body="Come say hi to our amazing Discord community. ❤️"
+			/>
+			<ul role="list" class="link-card-grid">
+				<Card
+					href="#"
+					title="Dercagar Pdf"
+					body="Learn how Astro works and explore the official API docs."
+			/>
+		</ul>
+	</section>
+	
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 1000px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+.inicio{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 30px;
+	}
+
+.imagen-lado{
+	width: 26%;
+	max-width: 400%;
+	margin-left: 14%;
+	border-radius: 150px;
+	box-shadow: 0 0 40px rgb(0, 247, 255);
+	margin-top: 25px;
+	
+}
+
+
+
+.texto-lado{
+	width: 100%;
+}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 1;
+		text-align: left;
+		margin-bottom: 1em;
+		
+		
+	}
+
+	.p-v2{
+	font-weight: 200px;
+	
+	}
+
+	.p-vcolor{
+		color: aqua;
+		font-weight: 200px;
+		
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+		text-shadow: 0 0 10px rgb(0, 255, 242);
+	}
+
+	.instructions{
+font-size: 15px;
+	}
+
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.3em 0.4em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+
+.social-link{
+	padding-bottom: 10px;
+}	
+
+
+.social-link a {
+	
+    display: inline-block;
+    min-height: 30px;
+    width: 40px;
+    background-color: #070707;
+    margin: 0 15px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #72d2fb;
+    transition: all .5s ease;
+	font-size: 15px;
+	box-shadow: 0 0 20px rgb(0, 238, 255);
+}
+
+.social-link a:hover {
+    background-color: #f9f5f0;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+    padding-left: 6px;
+}
+
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+
+	.buton1 {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+}
+
+.buton1 button {
+  background-color: #03d5ff;
+  color: #000000;
+  border: none;
+  padding: 10px 40px;
+  margin-right: 40px;
+  border-radius: 20px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 0 7px rgb(0, 238, 255);
+}
+
+
+.buton1 button:hover{
+  background-color: #000000;
+  color: #06eeff;
+  box-shadow: 0 0 20px rgb(0, 238, 255);
+}
+
+.educacion-section {
+    max-width: 1000px;
+    margin: 90px auto;
+	
+}
+
+p{
+	font-size: 12px;
+	color: #d9d9d9;
+}
+
+.educacion-title, .educacion-subtitle {
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+
+
+.educacion-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.educacion-item {
+    background-color:rgba(38, 33, 59, 0.381);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 calc(50% - 20px); /* Two columns with gap */
+    box-sizing: border-box;
+	padding-bottom: 30px
+	
+}
+
+.fa-solid {
+	font-size: 30px;
+}
+
+.educacion-item:hover {
+    transform: translateY(-5px);
+	background-color: rgba(11, 11, 11, 0.888);
+}
+
+.educacion-institution {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+	padding-left: 80px;
+}
+
+
+
+.decor-ima{
+	float: left; /* Alinea la imagen grande a la izquierda */
+    width: 400px; /* Ancho deseado para la imagen grande */
+    margin-right: 30px;/* Margen derecho para separarla de las otras imágenes */
+}
+
+
+
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subtitu {
+	color: #03d5ff;
+	text-shadow: 0 0 20px rgb(0, 255, 242);
+}
+
+.skills-p{
+	text-align: left;
+	color: antiquewhite;
+	line-height: 22px;
+	font-size: 14px;
+	
+}
+
+
+.conten-images {
+    overflow: hidden; /* Evita que las imágenes pequeñas floten junto a la imagen grande */
+	padding-left: 20px;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	
+	
+}
+
+.redondea {
+	padding-top: 40px;
+	padding-left: 10px;
+    width: 500px;
+    float:left ;
+    object-fit: cover; 
+	padding-bottom: 20px;
+}
+
+
+.container-f {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+			margin-bottom: 200px;
+			margin-top: 100px;
+			
+        }
+
+        .formu-sty {
+            background-color: #0d1c20;
+            padding: 40px;
+			border-radius: 15px;
+			box-shadow: 0 0 20px rgb(0, 255, 242);
+			
+        }
+
+        .cent-form {
+            display: flex;
+            flex-direction: column;
+			width: 300px;
+			
+        }
+
+		.cent-form input {
+            margin-bottom: 10px;
+			margin-top: 6px;
+            padding: 9px;
+            border: none;
+            border-radius: 7px;
+			background-color: #ffffff;
+			
+		}
+
+        .number {
+            text-align: left;
+            padding: 20px;
+			font-size: 28px;
+        }
+
+		.number p{
+			font-size: 16px;
+		}
+
+.btn1{
+	margin-top: 23px;
+	padding: 10px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	width: 300px;
+	font-weight: 600;
+	color: #0eaab5;
+}
+
+.tex-lenged{
+	font-size: 17px;
+	color: #0bdeed;
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<script type="module">
+    // Script JavaScript para el desplazamiento suave
+    const links = document.querySelectorAll('header ul li a');
+
+    links.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const targetId = link.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+</script>
+
+<script
+src="https://kit.fontawesome.com/72c31be9da.js"
+crossorigin="anonymous"
+></script>

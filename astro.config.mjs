@@ -5,6 +5,7 @@ import netlify from "@astrojs/netlify";
 
 
 export default defineConfig({
-  output: "server",
-  adapter: netlify()
+  site: 'https://Marlonleon2023.github.io',
+  base: '/portafolio.github.io-',
+
 });

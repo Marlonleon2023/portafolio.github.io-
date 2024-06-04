@@ -1,13 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import "../styles/marlon.css";
 import Navbar from '../components/Navbar.astro';
 ---
-<Layout title='holis'>
+<Layout title='libro'>
     <Navbar/>
 
 
-<section>
+<section class="pantal">
     <h1 class="color-h">Los Guardianes del Cosmos: Travesía en el Universo</h1>
     <p class="color-p">Los Guardianes del Cosmos: Travesía en el Universo, es una obra fascinante que narra la épica historia de un grupo 
         de seres dedicados a proteger la estabilidad y el equilibrio en el vasto universo.
@@ -26,22 +26,3 @@ import Navbar from '../components/Navbar.astro';
 
 
 
-<style>
-*{
-    width: 800px;
-    margin: 70px;
-}
-    .home{
-        position: fixed;
-    }
-
-.color-h{
-color: rgb(0, 247, 255);
-text-shadow: 0 0 20px rgb(0, 238, 255);
-}
-
-.color-p{
-color: antiquewhite;
-line-height: 30px;
-}
-</style>

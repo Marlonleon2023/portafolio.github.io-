@@ -1,0 +1,16 @@
+
+.color-h{
+color: rgb(0, 247, 255);
+text-shadow: 0 0 20px rgb(0, 238, 255);
+}
+
+.color-p{
+color: antiquewhite;
+line-height: 30px;
+}
+
+.pantal{
+    width: 800px;
+    padding-left: 200px;
+    padding-top: 100px;
+}

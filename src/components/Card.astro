@@ -59,4 +59,11 @@ const { href, title, body } = Astro.props;
 	.link-card:is(:hover, :focus-within) h2 {
 		color: rgb(var(--accent-light));
 	}
+
+	@media (max-width: 600px){
+		.link-card{
+			width: 450px;
+			margin-left: 40px;
+		}
+	}
 </style>

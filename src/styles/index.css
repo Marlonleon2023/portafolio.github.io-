@@ -1,6 +1,4 @@
-
-
-	main {
+main {
 		margin: auto;
 		padding: 1rem;
 		width: 1000px;
@@ -25,6 +23,11 @@ padding-top: 30px;
 	margin-top: 25px;
 	
 }
+
+
+
+
+
 
 
 
@@ -308,6 +311,117 @@ p{
 	font-size: 17px;
 	color: #0bdeed;
 }
+
+
+@media (max-width: 600px) {
+    main {
+        width:100%;
+        padding: 1rem;
+        font-size: 16px; /* Reduce el tamaño de la fuente para móviles */
+        line-height: 1.4;
+    }
+
+    .imagen-lado {
+        width: 40%;
+        max-width: 100%;
+        margin-top: 20px;
+		padding: 20px;
+		box-shadow: none;
+		
+		
+    }
+
+    .texto-lado {
+        width: 90%;
+		padding-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 24px; /* Reduce el tamaño de la fuente para móviles */
+		width: 400px;
+    }
+
+    .buton1 {
+        justify-content: center; /* Centra los botones en móviles */
+    }
+
+    .buton1 button {
+        margin: 10px 0; /* Ajusta el margen para móviles */
+        width: 100%;
+		margin-left: 10px;
+    }
+
+	.educacion-section{
+		width: 500px;
+		margin-left: 10px;
+	}
+
+    .educacion-item {
+        margin-bottom: 20px; /* Añade margen inferior entre elementos */
+		
+    }
+
+	.educacion-institution{
+		font-size: 16px;
+		padding-left: 10px;
+		
+	}
+
+	.educacion-item p{
+		text-align: left;
+		padding-top: 20px;
+	}
+
+    .decor-ima {
+        width: 0%;
+        margin-right: 0px;
+        margin-bottom: 20px; /* Añade margen inferior para separar las imágenes */
+    }
+
+	.conten-images{
+		width: 470px;
+	}
+	.skills-p{
+		padding-bottom: 20px;
+	}
+
+    .conten-images {
+        padding: 10px 0; /* Ajusta el padding para móviles */
+    }
+
+    .redondea {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px; /* Añade margen inferior para separar las imágenes */
+    }
+
+    .container-f {
+        flex-direction: column;
+        align-items: center;
+		margin-left: 80px;
+		
+    }
+
+    .cent-form {
+        width: 100%;
+		
+    }
+
+	.formu-sty{
+		width: 320px;
+		margin-left: 60px;
+		margin-top: 20px;
+	}
+
+    .btn1 {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+
+
+
 
 
 
